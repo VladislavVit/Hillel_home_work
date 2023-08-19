@@ -1,21 +1,21 @@
 string = input("Введіть рядок: ")
 char = input("Введіть символ: ")
-
+# Позиція символу
 v = 0
-
-found_positions = []
-
+# Знайдена позиція
+f = []
+# Пошук
 while v < len(string):
     v = string.find(char, v)
     if v != -1:
-        found_positions.append(v)
+        f.append(v)
         v += 1
     else:
         break
 
-
-if found_positions:
-    for pos in found_positions:
+# Виід результата пошуку
+if f:
+    for pos in f:
         print(f"Символ '{char}' знайдений на позиції: {pos}")
 else:
     print(f"Символ '{char}' не знайдений у рядку.")
