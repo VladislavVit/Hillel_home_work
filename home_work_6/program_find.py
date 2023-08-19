@@ -13,7 +13,7 @@ while v < len(string):
     else:
         break
 
-# Виід результата пошуку
+# Вивід результата пошуку
 if f:
     for pos in f:
         print(f"Символ '{char}' знайдений на позиції: {pos}")
