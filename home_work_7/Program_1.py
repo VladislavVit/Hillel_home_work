@@ -1,8 +1,6 @@
-# Діапазон
 v = list(range(10, 251))
 
-# Фільтруємо
-v = [e for e in v if e % 20 != 0]
-
-# Виводимо результат
+for i in v:
+    if i % 20 == 0:
+        v.remove(i)
 print(v)
